@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/itemAarti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/m8"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="8dp"
+                android:scrollbars="vertical"
+                android:text="वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ |\n निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ||"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/text_22" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

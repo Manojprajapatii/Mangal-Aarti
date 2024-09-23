@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.AllAartiActivity">
+
+    <!-- Action Bar Layout -->
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/m35"
+            android:layout_height="@dimen/m35"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/m10"
+            android:src="@drawable/back_icon"
+            app:tint="@color/yellowLight" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Mangal Aarti"
+            android:textAlignment="center"
+            android:textColor="@color/yellowLight"
+            android:textSize="@dimen/text_22"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnDecrease"
+            android:layout_width="@dimen/m35"
+            android:layout_height="@dimen/m35"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/m8"
+            android:layout_toLeftOf="@+id/btnIncrease"
+            android:src="@drawable/do_not_disturb"
+            app:tint="@color/skyLight" />
+
+        <ImageView
+            android:id="@+id/btnIncrease"
+            android:layout_width="@dimen/m35"
+            android:layout_height="@dimen/m35"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/m15"
+            android:src="@drawable/add_circle"
+            app:tint="@color/skyLight" />
+    </RelativeLayout>
+
+    <!-- ScrollView containing the rest of the content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/actionBarSeacond"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m50"
+                android:background="@color/redLight">
+
+                <TextView
+                    android:id="@+id/catName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Mangal Aarti"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_22" />
+
+                <ImageView
+                    android:id="@+id/btnShareAarti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:paddingLeft="@dimen/m10"
+                    android:src="@drawable/baseline_share_24"
+                    app:tint="@color/blueLight" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvAarti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/m8" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

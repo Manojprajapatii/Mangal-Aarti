@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MangalAarti" parent="Theme.Material3.DayNight.NoActionBar">
+<!--        <color name="colorPrimary">#BB86FC</color>-->
+<!--        <color name="colorPrimaryDark">#3700B3</color>-->
+<!--        <color name="colorAccent">#03DAC6</color>-->
+<!--        <color name="textColor">#FFFFFF</color>-->
+
+<!--        <color name="black">#FFFFFF</color>-->
+<!--        <color name="white">#FFFFFFFF</color>-->
+<!--        <color name="red">#F5004F</color>-->
+<!--        <color name="redLight">#EECAD5</color>-->
+<!--        <color name="yellowLight">#F9E400</color>-->
+<!--        <color name="blueLight">#7C00FE</color>-->
+<!--        <color name="yellow">#FFAF00</color>-->
+
+    </style>
+</resources>

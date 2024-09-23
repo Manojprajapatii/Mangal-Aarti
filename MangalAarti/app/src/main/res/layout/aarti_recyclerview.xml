@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/m8"
+        app:cardCornerRadius="@dimen/m10"
+        app:cardElevation="3dp"
+        android:padding="@dimen/m8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aartiTextLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/aartiImage"
+                android:layout_centerVertical="true"
+                android:text="Sample Text"
+                android:textSize="@dimen/text_22"
+                android:textColor="@color/textColor"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingRight="8dp"
+                android:fontWeight="900"/>
+
+            <ImageView
+                android:id="@+id/aartiImage"
+                android:layout_width="@dimen/m110"
+                android:layout_height="@dimen/m80"
+                android:src="@drawable/splash"
+                android:scaleType="fitXY"
+                android:padding="@dimen/m10"
+                android:contentDescription="Sample Image" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

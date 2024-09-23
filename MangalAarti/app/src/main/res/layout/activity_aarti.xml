@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".activity.AartiActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:background="@color/red">
+
+        <ImageView
+            android:layout_width="@dimen/m50"
+            android:layout_height="wrap_content"
+            android:src="@drawable/swastika"
+            android:layout_marginStart="@dimen/m5"
+            android:padding="@dimen/m5" />
+
+        <TextView
+            android:id="@+id/topLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mangal Aarti"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_22"
+            android:textStyle="bold"
+            android:textColor="@color/yellowLight"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/searchbarIcon"
+            android:layout_width="@dimen/m70"
+            android:layout_height="@dimen/m50"
+            android:src="@drawable/search_24"
+            android:padding="@dimen/m5"
+            android:layout_alignParentEnd="true"
+            app:tint="@color/yellowLight"
+            android:visibility="visible"/>
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:id="@+id/searchBar"
+            style="@style/MaterialSearchBarLight"
+            app:mt_speechMode="false"
+            app:mt_hint="Custom hint"
+            android:padding="3dp"
+            app:mt_placeholder="Search Aarti here"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionBar"
+        android:layout_margin="@dimen/m8">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/aartiRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/aarti_recyclerview"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!--    window.statusBarColor = ContextCompat.getColor(this, R.color.red)-->

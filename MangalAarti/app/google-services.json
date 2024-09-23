@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326846526409",
+    "project_id": "mangal-aarti",
+    "storage_bucket": "mangal-aarti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326846526409:android:814009e30d7430df92ee18",
+        "android_client_info": {
+          "package_name": "com.mangalaarti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvg3vXlU8R0bMkBOOWKcYmwjtmUvHDeF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
